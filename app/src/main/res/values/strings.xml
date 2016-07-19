@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RxJava+Retrofit</string>
+    <string name="get_button">Get info</string>
+    <string name="clear_button">Clear all</string>
+</resources>
