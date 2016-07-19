@@ -8,15 +8,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import java.util.List;
 
 import com.example.azvk.rxjavaretrofit.Models.Player;
 import com.example.azvk.rxjavaretrofit.R;
 import com.squareup.picasso.Picasso;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.List;
-import java.util.TimeZone;
 
 public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.ViewHolder>{
 
@@ -36,6 +32,11 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
 
     public Context getContext(){
         return context;
+    }
+
+    public void clearAll(){
+        listPlayer.clear();
+        notifyDataSetChanged();
     }
 
     @Override
@@ -64,12 +65,12 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
     }
 
 
-    public static class ViewHolder extends RecyclerView.ViewHolder{
+    protected static class ViewHolder extends RecyclerView.ViewHolder{
 
         TextView playerName;
         ImageView playerImage;
 
-        public ViewHolder(View itemView) {
+        private ViewHolder(View itemView) {
             super(itemView);
 
             playerImage = (ImageView)itemView.findViewById(R.id.playerImage);
