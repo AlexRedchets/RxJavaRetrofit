@@ -28,8 +28,8 @@ import rx.schedulers.Schedulers;
 public class RecycleViewFragment extends Fragment{
 
     private static final String TAG = RecycleViewFragment.class.getSimpleName();
-    RecycleViewAdapter adapter;
-    RecyclerView recyclerView;
+    private RecycleViewAdapter adapter;
+    private RecyclerView recyclerView;
 
     @Override
     public void onStart() {
