@@ -6,8 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 
-import com.example.azvk.rxjavaretrofit.fragments.ButtonsFragment;
-import com.example.azvk.rxjavaretrofit.fragments.RecycleViewFragment;
+import com.example.azvk.rxjavaretrofit.Fragments.ButtonsFragment;
+import com.example.azvk.rxjavaretrofit.Fragments.RecycleViewFragment;
 
 public class MainActivity extends AppCompatActivity {
 
